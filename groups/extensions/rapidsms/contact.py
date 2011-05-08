@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 from rapidsms.models import Backend
 
-from afrims.apps.groups.utils import format_number
+from groups.utils import format_number
 
 
 class ContactExtra(models.Model):

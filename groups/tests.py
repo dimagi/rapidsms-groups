@@ -9,10 +9,10 @@ from rapidsms.messages.incoming import IncomingMessage
 
 from afrims.tests.testcases import CreateDataTest, patch_settings
 
-from afrims.apps.groups.models import Group
-from afrims.apps.groups import forms as group_forms
-from afrims.apps.groups.validators import validate_phone
-from afrims.apps.groups.app import GroupsApp
+from groups.models import Group
+from groups import forms as group_forms
+from groups.validators import validate_phone
+from groups.app import GroupsApp
 
 
 class GroupCreateDataTest(CreateDataTest):

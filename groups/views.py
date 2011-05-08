@@ -15,8 +15,8 @@ from django.contrib import messages
 
 from rapidsms.models import Contact
 
-from afrims.apps.groups.models import Group
-from afrims.apps.groups.forms import GroupForm, ContactForm
+from groups.models import Group
+from groups.forms import GroupForm, ContactForm
 
 from afrims.apps.reminders.models import Patient
 

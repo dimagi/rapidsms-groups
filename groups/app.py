@@ -1,7 +1,7 @@
 from rapidsms.apps.base import AppBase
 from rapidsms.models import Contact
 
-from afrims.apps.groups.utils import normalize_number
+from groups.utils import normalize_number
 
 
 class GroupsApp(AppBase):

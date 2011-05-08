@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-from afrims.apps.groups import views
+from groups import views
 
 
 urlpatterns = patterns('',

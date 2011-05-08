@@ -3,9 +3,9 @@ import re
 
 from django import forms
 
-from afrims.apps.groups.models import Group
-from afrims.apps.groups.utils import format_number
-from afrims.apps.groups.validators import validate_phone
+from groups.models import Group
+from groups.utils import format_number
+from groups.validators import validate_phone
 
 
 from rapidsms.models import Contact, Backend
@@ -14,7 +14,7 @@ from rapidsms.models import Contact, Backend
 __all__ = ('GroupForm', 'ContactForm', 'ForwardingRuleFormset',)
 
 
-logger = logging.getLogger('afrims.apps.groups.forms')
+logger = logging.getLogger('groups.forms')
 
 
 class FancyPhoneInput(forms.TextInput):
