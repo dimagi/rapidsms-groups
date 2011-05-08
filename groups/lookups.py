@@ -10,7 +10,7 @@ from rapidsms.models import Contact
 
 class ContactLookup(ModelLookup):
     model = Contact
-    filters = {'patient__isnull': True}
+    filters = {}
     search_field = 'name__icontains'
 
     def results(self, request):

@@ -18,7 +18,6 @@ from rapidsms.models import Contact
 from groups.models import Group
 from groups.forms import GroupForm, ContactForm
 
-from afrims.apps.reminders.models import Patient
 
 
 @login_required
@@ -72,8 +71,7 @@ def delete_group(request, group_id):
 
 @login_required
 def list_contacts(request):
-    # filter out patient records
-    contacts = Contact.objects.filter(patient__isnull=True)
+    contacts = Contact.objects
     context = {
         'contacts': contacts.order_by('name'),
     }
